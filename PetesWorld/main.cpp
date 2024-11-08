@@ -1,7 +1,7 @@
 // program to find countries in Pete's World
 // date November 2022
 // author Pete Lowe
-// //Marie-Elise Ghijsen
+// Marie-Elise Ghijsen
 // Zaid Elkhazendar
 // estimated time 120 minutes
 // actual time 1 hour, 30 minutes
@@ -102,6 +102,29 @@ int main()
 			std::cout << "Cocos (Keeling) Islands, Cook Islands" << std::endl;
 		}
 	}	
+	if (letter == 'd' || letter == 'D')//written by Zaid
+	{
+		if (region == 1)
+		{
+			std::cout << "Dominica, Dominican Republic" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Denmark" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "Djibouti" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "There are no countries in this region." << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "There are no countries in this region." << std::endl;
+		}
+	}
 	if (letter == 'v' || letter == 'V') // written by Marie-Elise
 	{
 		if (region == 1)
@@ -125,6 +148,7 @@ int main()
 			std::cout << "Vanuatu, Virgin Islands (British), Virgin Islands (U.S.)" << std::endl;
 		}
 	}
+	
 	if (letter == 'w' || letter == 'W') // written by Marie-Elise
 	{
 		if (region == 1)
