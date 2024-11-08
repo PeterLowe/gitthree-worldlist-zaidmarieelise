@@ -22,7 +22,7 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-	std::cout << "Pick a letter from A to B or Y to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to C or Y to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -78,6 +78,30 @@ int main()
 			std::cout << "Bahrain" << std::endl;
 		}
 	}	
+	if (letter == 'c' || letter == 'C')//written by Zaid
+	{
+		if (region == 1)
+		{
+			std::cout << "Canada, Cayman Islands, Colombia, Costa Rica, Cuba" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Croatia, Cyprus, Czech Republic" << std::endl; 
+		}
+		if (region == 3)
+		{
+			std::cout << "Cameroon, Cape Verde, Central African Republic, Chad," << 
+				"Comoros, Democratic Republic of the Congo(Kinshasa), Congo, Republic of(Brazzaville), Côte D'ivoire (Ivory Coast)" << std::endl; 
+		}
+		if (region == 4)
+		{
+			std::cout << "Cambodia, China, Christmas Island, Cyprus" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "Cocos (Keeling) Islands, Cook Islands" << std::endl; 
+		}
+	}
 	if (letter == 'y' || letter == 'Y') // written by Marie-Elise
 	{
 		if (region == 1)
@@ -86,7 +110,9 @@ int main()
 		}
 		if (region == 2)
 		{
-			std::cout << "There are no Ys in Europe" << std::endl;
+			std::cout << "There are no Ys in Europe" 
+				<< 
+				std::endl;
 		}
 		if (region == 3)
 		{
