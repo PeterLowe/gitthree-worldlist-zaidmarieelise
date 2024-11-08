@@ -25,12 +25,12 @@ int main()
 	std::cout << "Pick a letter from A to C or Y to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
-	{ 
+	{
 		if (letter < 'a' || letter > 'z') // not a lower case letter
 		{
 			std::cout << "You need to select a letter from A to Z" << std::endl;
-			return 0; 
-		}		
+			return 0;
+		}
 	}
 	if (letter == 'a' || letter == 'A') // written by Pete
 	{
@@ -54,7 +54,7 @@ int main()
 		{
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
-	}	
+	}
 	if (letter == 'b' || letter == 'B') // written by Zaid
 	{
 		if (region == 1)
@@ -77,7 +77,8 @@ int main()
 		{
 			std::cout << "Bahrain" << std::endl;
 		}
-	}	
+	}
+
 	if (letter == 'c' || letter == 'C')//written by Zaid
 	{
 		if (region == 1)
@@ -86,12 +87,12 @@ int main()
 		}
 		if (region == 2)
 		{
-			std::cout << "Croatia, Cyprus, Czech Republic" << std::endl; 
+			std::cout << "Croatia, Cyprus, Czech Republic" << std::endl;
 		}
 		if (region == 3)
 		{
-			std::cout << "Cameroon, Cape Verde, Central African Republic, Chad," << 
-				"Comoros, Democratic Republic of the Congo(Kinshasa), Congo, Republic of(Brazzaville), Côte D'ivoire (Ivory Coast)" << std::endl; 
+			std::cout << "Cameroon, Cape Verde, Central African Republic, Chad," <<
+				"Comoros, Democratic Republic of the Congo(Kinshasa), Congo, Republic of(Brazzaville), Côte D'ivoire (Ivory Coast)" << std::endl;
 		}
 		if (region == 4)
 		{
@@ -99,60 +100,82 @@ int main()
 		}
 		if (region == 5)
 		{
-			std::cout << "Cocos (Keeling) Islands, Cook Islands" << std::endl; 
+			std::cout << "Cocos (Keeling) Islands, Cook Islands" << std::endl;
 		}
-	}
-	if (letter == 'y' || letter == 'Y') // written by Marie-Elise
-	{
-		if (region == 1)
+		if (letter == 'x' || letter == 'X') // written by Marie-Elise
 		{
-			std::cout << "There are no Ys in the Americas" << std::endl; // default negative response
+			if (region == 1)
+			{
+				std::cout << "There are no Xs in the Americas" << std::endl;
+			}
+			if (region == 2)
+			{
+				std::cout << "There are no Xs in Europe" << std::endl;
+			}
+			if (region == 3)
+			{
+				std::cout << "There are no Xs in Africa" << std::endl;
+			}
+			if (region == 4)
+			{
+				std::cout << "There are no Xs in Asia" << std::endl;
+			}
+			if (region == 5)
+			{
+				std::cout << "There are no Xs in rest of the world" << std::endl;
+			}
 		}
-		if (region == 2)
+		if (letter == 'y' || letter == 'Y') // written by Marie-Elise
 		{
-			std::cout << "There are no Ys in Europe" 
-				<< 
-				std::endl;
+			if (region == 1)
+			{
+				std::cout << "There are no Ys in the Americas" << std::endl;
+			}
+			if (region == 2)
+			{
+				std::cout << "There are no Ys in Europe"
+					<<
+					std::endl;
+			}
+			if (region == 3)
+			{
+				std::cout << "There are no Ys in Africa" << std::endl;
+			}
+			if (region == 4)
+			{
+				std::cout << "There are no Ys in Aisa" << std::endl;
+			}
+			if (region == 5)
+			{
+				std::cout << "Yemen Arabian Peninsula" << std::endl;
+			}
 		}
-		if (region == 3)
+		if (letter == 'z' || letter == 'Z') // written by Pete
 		{
-			std::cout << "There are no Ys in Africa" << std::endl;
-		}
-		if (region == 4)
-		{
-			std::cout << "There are no Ys in Aisa" << std::endl;
-		}
-		if (region == 5)
-		{
-			std::cout << "Yemen Arabian Peninsula" << std::endl;
-		}
-	}
-	if (letter == 'z' || letter == 'Z') // written by Pete
-	{
-		if (region == 1)
-		{
-			std::cout << "There are no Zs in the Americas" << std::endl; // default negative response
-		}
-		if (region == 2)
-		{
-			std::cout << "There are no Zs in Europe" << std::endl;
-		}
-		if (region == 3)
-		{
-			std::cout << "Zimbabwe, Zambia" << std::endl;
-		}
-		if (region == 4)
-		{
-			std::cout << "There are no Zs in Aisa" << std::endl;
-		}
-		if (region == 5)
-		{
-			std::cout << "There are no Zs in rest of the world" << std::endl;
+			if (region == 1)
+			{
+				std::cout << "There are no Zs in the Americas" << std::endl; // default negative response
+			}
+			if (region == 2)
+			{
+				std::cout << "There are no Zs in Europe" << std::endl;
+			}
+			if (region == 3)
+			{
+				std::cout << "Zimbabwe, Zambia" << std::endl;
+			}
+			if (region == 4)
+			{
+				std::cout << "There are no Zs in Aisa" << std::endl;
+			}
+			if (region == 5)
+			{
+				std::cout << "There are no Zs in rest of the world" << std::endl;
+			}
 		}
 
+
+
+		return 1;
 	}
-	
-	
-	
-	return 1;
 }
